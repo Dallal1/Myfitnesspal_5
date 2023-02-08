@@ -1,0 +1,187 @@
+:root {
+    --blue-color: #0097ff;
+    --p-color: #777;
+} 
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Header */
+.header-pags {
+    box-shadow: 0 0 10px #ddd;
+} 
+.header-pags .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.header-pags .container .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blue-color);
+}
+.header-pags .container .anmeldung {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
+@media (max-width:767px) {
+    .header-pags .container .anmeldung {
+        font-size: 14px;
+    }
+}
+/* End Header */
+/* Start Conter */
+.conter {
+    display: flex;
+    padding: 70px 30px 30px;
+}
+@media (max-width: 992px) {
+    .conter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 0;
+    }
+}
+.conter .txt {
+    padding-top: 30px;
+}
+.conter .txt > h2 {
+    margin: 0 0 20px;
+    font-size: 60px;
+    max-width: 421px;
+}
+@media (max-width: 992px) {
+    .conter .txt > h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+.conter .txt p {
+    color: var(--p-color);
+    margin: 0;
+    max-width: 421px;
+}
+@media (max-width: 992px) {
+    .conter .txt  p {
+        text-align: center;
+    }
+}
+.conter .txt  a {
+    background-color: var(--blue-color);
+    color: white;
+    padding: 15px 20px;
+    margin-top: 20px;
+    display: block;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.conter .txt  a:hover {
+    background-color: #002ffff7;
+}
+.conter .img {
+    max-width: 476px;
+}
+.conter .img img {
+    width: 100%;
+}
+/* End Conter */
+/* Start Mess  */
+.mess {
+    display: flex;
+    padding: 40px 30px 0 30px;
+}
+@media (max-width: 992px) {
+    .mess {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
+.mess .img {
+    max-width: 422px;
+    margin-right: 20px;
+}
+@media (max-width: 992px) {
+    .mess .img  {
+        margin-top: 30px;
+        padding-top: 25px;
+        margin-right: 0px;
+    }
+}
+.mess .img  img {
+    width: 100%;
+}
+.mess .txt {
+    margin: 30px 0;
+    padding-top: 25px;
+}
+.mess .txt > h3 {
+    margin: 0 0 20px;
+    font-size: 50px;
+    max-width: 500px;
+}
+@media (max-width: 992px) {
+    .mess .txt > h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+.mess .txt p {
+    color: var(--p-color);
+    margin: 0;
+    max-width: 500px;
+}
+@media (max-width: 992px) {
+    .mess .txt p {
+        text-align: center;
+    }
+}
+/* End Mess  */
